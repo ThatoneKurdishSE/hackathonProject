@@ -1,20 +1,13 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
 
+export default function CryptoList({...crypto}) {
+  console.log(crypto)
+  const displayCryptoList = () => {
+    // crypto.map((crypto) => {
+    //   <Card key={crypto.nameid} name={crypto.name} price={crypto.price_usd} />;
+    // });
+  };
 
-export default function CryptoList(cryptoList) {
-  
-  console.log(cryptoList)
-
-  // const displayCrypto = () => {
-  //   return cryptoList.data.map(cryptoCard => {
-  //     return <Card key={crypto.nameid} />
-  //   })
-  // }
-  
-  return (
-    <ul>
-      {/* {displayCrypto()} */}
-    </ul>
-  )
+  return <ul>{}</ul>;
 }
